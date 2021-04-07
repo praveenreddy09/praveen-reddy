@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            html tables
+        </title>
+    </head>
+    <body>
+        <table >
+            <thead>
+               <tr>
+                   <th>s.no</th>
+                   <th>
+                       name
+                   </th>
+                   <th>
+                       section 
+                   </th>
+               </tr>
+            </thead>
+            <tbody> 
+            <tr>
+                <td>1</td>
+                <td>
+                    praveen
+                </td>
+                <td>
+                    k20rg
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>praveen 2</td>
+                <td>K20YR</td>
+                
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>nikhil</td>
+                <td>K20YR</td>
+                
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>suresh</td>
+                <td>K20ST</td>
+            </tr>
+
+           
+
+            </tbody>
+        </table>
+        <h1>
+            tables with borders and rowspan
+        </h1>
+        <h2>
+            (if same data is there then we have to use rowspan)
+        </h2>
+        <table border="3px" style="padding: 5px;">
+            <thead>
+               <tr>
+                   <th>s.no</th>
+                   <th>
+                       name
+                   </th>
+                   <th>
+                       section 
+                   </th>
+               </tr>
+            </thead>
+            <tbody> 
+            <tr>
+                <td>1</td>
+                <td>
+                    praveen
+                </td>
+                <td>
+                    k20rg
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>praveen 2</td>
+                <td rowspan="2">K20YR</td>
+                
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>nikhil</td>
+                
+                
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>suresh</td>
+                <td>K20ST</td>
+            </tr>
+           
+
+           
+
+            </tbody>
+        </table>
+        <h1>tables with colspan</h1>
+        <table border="3px" style="padding: 5px;">
+            <thead>
+                <tr>
+                    <td>S.NO</td>
+                    <td>NAME</td>
+                    <td>BRANCH</td>
+                    <td>SECTION</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <TD>1</TD>
+                    <TD>PRAVEEN</TD>
+                    <TD>CSE</TD>
+                    <TD>K20RG</TD>
+                </tr>
+                <tr>
+                    <TD>2</TD>
+                    <TD>SURESH</TD>
+                    <TD colspan="2" rowspan="2">ECE          ,K20YE</TD>
+
+                </tr>
+                <tr>
+                    <TD>2</TD>
+                    <TD>NIKHIL</TD>
+                    
+                    
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
