@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>prop of tables of some depth</title>
+        <style>
+           
+          #ID1{
+                border:2px solid green;
+             }
+             #ID2{
+                  border:2px solid green;
+             }
+             #ID2 th{
+                  border:2px solid green;
+                  border-collapse: collapse;
+             }
+             #ID2 td{
+                  border:2px solid green;
+                  border-collapse: collapse;
+             } 
+             
+            
+             #ID3{
+                  Border:2px solid red;
+                  margin-left: auto;
+                  margin-right: auto;
+                  background-color: aqua;
+             }
+             #ID3 th{
+                  border:2px solid red;
+                  border-collapse:collapse;
+                  text-align: center;
+             }
+             #ID3 td{
+                  Border:2px solid red;
+                  border-collapse:collapse;
+                  text-align: center;
+             }
+        </style>       
+    </head>
+    <body>
+        <table id="ID1">
+            <thead>
+                 <tr>
+                     <th> S.NO</th>
+                     <th>Name</th>
+                     <th>section</th>
+                 </tr>
+            </thead>
+            <tbody>
+                  <tr> 
+                      <td>1</td>
+                      <td>Jayasurya </td>
+                      <td>K20YR</td>
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>Kalyan</td>
+                      <td>K20RG</td>
+                 </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Raghu preetham</td>
+                    <td>K20NR</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            we see that there are no borders to the inner cells to get borders for them use border attribute for td and th also
+        </p>
+        <table id="ID2">
+            <thead>
+                 <tr>
+                     <th> S.NO</th>
+                     <th>Name</th>
+                     <th>section</th>
+                 </tr>
+            </thead>
+            <tbody>
+                  <tr> 
+                      <td>1</td>
+                      <td>Jayasurya </td>
+                      <td>K20YR</td>
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>Kalyan</td>
+                      <td>K20RG</td>
+                 </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Raghu preetham</td>
+                    <td>K20NR</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>we can see that there are separate borders for all the cells to avoid this use border-collapse attribute and  to shift the table to the center use<br>
+             margin-left:auto and margin-right:auto and for heading use caption element<br>
+            </p>
+        <table id="ID3">
+                    <caption>details of the student</caption>
+            <thead>
+                 <tr>
+                     <th> S.NO</th>
+                     <th>Name</th>
+                     <th>section</th>
+                 </tr>
+            </thead>
+            <tbody>
+                  <tr> 
+                      <td >1</td>
+                      <td >Jayasurya </td>
+                      <td>K20YR</td>
+                  </tr>
+                  <tr>
+                      <td >2</td>
+                      <td >Kalyan</td>
+                      <td >K20RG</td>
+                 </tr>
+                  <tr>
+                    <td >3</td>
+                    <td >Raghu preetham</td>
+                    <td >K20NR</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

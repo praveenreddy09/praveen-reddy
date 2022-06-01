@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="resume.css">
+  <link rel="stylesheet" type="text/css" href="fontawesome-free-5.15.3-web\fontawesome-free-5.15.3-web\css\all.css">
+  
+  <title>Golds Gym</title>
+</head>
+
+<body >
+
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>G</span>old's  <span>G</span>ym</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#skills" data-after="Skills">Carrers</a></li>
+            <li><a href="#about" data-after="About">About us</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero" style="background-image: url( image22.jpeg ); background-repeat: no-repeat; background-size: cover;">
+    <div class="hero container">
+      <div>
+        
+          <div class="slider">
+              <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1" >
+                <input type="radio" name="radio-btn" id="radio2" >
+                <input type="radio" name="radio-btn" id="radio3" >
+                <input type="radio" name="radio-btn" id="radio4" >
+                <input type="radio" name="radio-btn" id="radio5" >
+              
+                <div class="slide first">
+                     <img src="pr6.jpg" alt="there will be a picture">
+               </div>
+                <div class="slide">
+                     <img src="pr4.webp" alt="there will be a picture">
+             </div>
+                <div class="slide">
+                 <img src="pr2.jpg" alt="there will be a picture">
+                </div>
+                <div class="slide">
+                    <img src="pr3.jpg" alt="there will be a picture">
+                </div>
+                <div class="slide">
+                  <img src="pr5.png" alt="there will be a picture">
+              </div>
+     
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                </div>
+              </div>
+              <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+            </div>
+ 
+          </div>
+          <script type="text/javascript">
+              var counter = 1;
+              setInterval(function(){
+            document.getElementById('radio'+ counter).checked=true;
+            counter++;
+            if(counter>5){
+                counter=1
+            }
+              }, 3000);
+            </script>
+
+       
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+</div>
+<script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+  document.getElementById('radio'+ counter).checked=true;
+  counter++;
+  if(counter>5){
+      counter=1
+  }
+    }, 3000);
+  </script>
+
+</header>
+<div>
+<div class="tab">
+    <button class="tablinks" onclick="openpackage(event, 'package 1')" id="defaultOpen">package 1</button>
+    <button class="tablinks" onclick="openpackage(event, 'package 2')">package 2</button>
+    <button class="tablinks" onclick="openpackage(event, 'package 3')">package 3</button>
+  </div>
+  
+  <div id="package 1" class="tabcontent">
+    <h3>package 1</h3>
+    
+  </div>
+  
+  <div id="package 2" class="tabcontent">
+    <h3>package 2</h3>
+   
+  </div>
+  
+  <div id="package 3" class="tabcontent">
+    <h3>package 3</h3>
+    <p>
+
+    </p>
+  </div>
+  
+  <script>
+  function openpackage(evt, packageName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(packageName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  document.getElementById("defaultOpen").click();
+  </script>
+</div>
+<div id="div3">
+<h2> Galary</h2>
+<p>
+<img src="5.jpg">
+<img src="2.jfif">
+</p>
+</div>
+<div id="div4">
+<h3>Faq's</h3>
+</div>
+
+ 
+ 
+
+        
+   <!-- About skills-->
+   <section id="skills"   style="background-image: url( image22.jpeg); background-repeat: no-repeat; background-size: cover;">
+    <div class="skills container" >
+    
+      <div class="skills-top">
+        <h1 class="section-title">Sk<span>i</span>lls</h1>
+        
+        <p></p>
+      </div>
+      <div class="skills-bottom">
+        <div class="skills-item">
+          
+          <h2>Html</h2>
+          
+        </div>
+        <div class="skills-item">
+         
+          <h2>CSS</h2>
+          <p></p>
+        </div>
+        <div class="skills-item">
+          
+          <h2> Java script </h2>
+          <p></p>
+         
+        </div>
+        <div class="skills-item">
+          
+            <h2> C++ </h2>
+            <p></p>
+        </div>
+        <div class="skills-item">
+          
+          <h2>C-Programming</h2>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End Skills Section-->
+  
+  <!--start education section-->
+  <section id="Education"style="background-image: url( image22.jpeg );background-repeat: no-repeat; background-size: cover;" >
+    <div class="Education container">
+      <div class="Education"  >
+      <div class="Education-header">
+        <h1 class="section-title">Edu<span>cation</span></h1>
+      </div>
+     
+            <div class="Education-item" >
+          
+     
+      <div class="Education-info" style="color: white;">
+        <div class="icons">
+          <div class="icon-1"style="background-image: linear-gradient(60deg, #074146 0%, #074146 100%);
+          text-align: center; height:100%;width:100%">
+          <i class="fas fa-user-graduate" style="font-size: 120px;color: white;"></i>
+          <div class="info">
+      
+          </div>
+          </div>
+          <div class="icon2" style="background-image: linear-gradient(60deg,#074146 0%, #074146 100%);
+          text-align: center;" >
+          <i class="fas fa-user-graduate" style="font-size: 120px;color: white;"></i>
+          <div class ="info">
+      <h1>INTERMEDIATE(2018-2020)</h1>
+     <h2 style="text-color:white;">MPC(Impulse Junior College)</h2>
+     <P>     </P>
+          </div>
+          </div>
+          <div class="icon3"style="background-image: linear-gradient(60deg, #074146 0%, #074146 100%);
+          text-align: center;">
+          <i class="fas fa-user-graduate" style="font-size: 120px;color: white;"></i>
+          <div class="info">
+      <h1>SSC(2017-2018)</h1>
+      <h2>Excellent Star High  School</h2>
+    
+          </div>
+          </div>
+     </div>
+     </div>
+            </div>
+     </div>
+    </div>
+  </section>
+  <!--end education section-->
+  <!-- About Section -->
+  <section id="about"  style="background-image: url( image22.jpeg); background-repeat: no-repeat; background-size: cover;">
+    <div class="about container">
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        <h2>Computer Science Enthusiasts </h2>
+        <p> Computer science engineering student in Lovely Professional University-punjab 
+            </p>
+            <p> I have been interested in computer science engineering since school education. Very passionate about coding like C, C ++, HTML, JavaScript</p>
+       
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  <section class ="contact" id="contact" style="background-image: url( image22.jpeg); background-repeat: no-repeat; background-size: cover;">
+    <div class="Header" style="text-align:center; color:crimson;height: 100px ; font-size: xx-large;" >
+    <h1 class ="Header"><bold>CON<span>TACT</span></bold></h1>
+    </div>
+    <div class="max-width">
+      <h2 class="title">Contact me</h2>
+      <div class="contact-content">
+          <div class="column left">
+            
+              <div class="icons">
+                  <div class="row">
+                    <i class="fas fa-user"></i>
+                      <div class="info">
+                          <div class="head">Name</div>
+                          <div class="sub-title">posham vicharitha </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <i class="fas fa-map-marker-alt"></i>                  
+                       <div class="info">
+                          <div class="head">Address</div>
+                          <div class="sub-title">Hyderabad, India</div>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <i class="fas fa-envelope"></i>
+                      <div class="info">
+                          <div class="head">Email</div>
+                          <div class="sub-title">245chinnu@gmail.com</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="column right">
+              <div class="text">Message me</div>
+              <form class="contact-form" action="#" method="POST">
+                  <div class="fields">
+                      <div class="field name">
+                          <input type="text" class="fullname" placeholder="Name">
+                      </div>
+                      <div class="field email">
+                          <input type="text" class="email-input" placeholder="Email">
+                      </div>
+                  </div>
+                  <div class="field">
+                      <input type="text" class="subject" placeholder="Subject">
+                  </div>
+                  <div class="field textarea">
+                      <textarea class="message" cols="30" rows="10" placeholder="Message.."></textarea>
+                  </div>
+                  <div class="button-area">
+                      <button class="send-msg" type="submit" name="send">Send message</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container" >
+      <div class="brand">
+        <h1><span>G</span>olds <span>G</span>ym</h1>
+      </div>
+      <h2></h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+        </div>
+      </div>
+      <p>Copyright © 2022 golds gym. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="app.js"></script>
+</body>
+
+</html>

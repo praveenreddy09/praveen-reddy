@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Tables with CSS </title>
+    <style>
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #id1,
+        #id1 th,
+        #id1 td {
+            color: blueviolet;
+            border: 2px solid green;
+            /* separate is the default value for border-collapse */
+            border-collapse: collapse;
+            width: 80%;
+            text-align: center;
+            /* background-color: lightcoral; */
+        }
+
+        #id1 {
+            box-shadow: 0 0 10px red;
+        }
+
+        #id1 td {
+            color: black
+        }
+
+         caption {
+            caption-side: top;
+        } 
+        /* .center:hover{
+            background-color: brown;
+        } */
+        tr:nth-child{
+            background-color: rgb(114, 114, 136);
+        }
+        tr:nth-child(even){
+            background-color: rgb(70, 72, 73);
+        }
+    </style>
+</head>
+
+<body>
+    <table ID="id1" class="center">
+        <caption> Details of the Students </caption>
+        <thead>
+            <tr>
+                <th>Sl. No.</th>
+                <th>Name</th>
+                <th>Section</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Rahul</td>
+                <td>K20KT</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Shivam</td>
+                <td>K20RB</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Smita</td>
+                <td>K20RG</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

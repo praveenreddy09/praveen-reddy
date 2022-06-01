@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            demo front page
+        </title>
+        <link rel="stylesheet" href="pr demo.css">
+      
+    </head>
+    <body>
+        <nav>
+           <div class="logo">
+          <a href="file:///D:/PRACTICE%20CSE%20326/praveen-reddy/pr%20front.html">  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/Gold%27s_Gym_logo.svg/1200px-Gold%27s_Gym_logo.svg.png" id="logo" alt="logo">
+          </a> </div>
+            <ul>
+            
+            <li><a class="active" href="file:///D:/PRACTICE%20CSE%20326/praveen-reddy/pr%20front.html">Home
+              </a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Carrers</a></li>
+            <li><a href="#">Contact Us</a></li>
+        
+            </ul>
+            </nav>
+           <header id="header">
+            <div class="slider">
+                <div class="slides">
+                  <input type="radio" name="radio-btn" id="radio1" >
+                  <input type="radio" name="radio-btn" id="radio2" >
+                  <input type="radio" name="radio-btn" id="radio3" >
+                  <input type="radio" name="radio-btn" id="radio4" >
+                  <input type="radio" name="radio-btn" id="radio5" >
+                
+                  <div class="slide first">
+                       <img src="pr6.jpg" alt="there will be a picture">
+                 </div>
+                  <div class="slide">
+                       <img src="pr4.webp" alt="there will be a picture">
+               </div>
+                  <div class="slide">
+                   <img src="pr2.jpg" alt="there will be a picture">
+                  </div>
+                  <div class="slide">
+                      <img src="pr3.jpg" alt="there will be a picture">
+                  </div>
+                  <div class="slide">
+                    <img src="pr5.png" alt="there will be a picture">
+                </div>
+       
+                  <div class="navigation-auto">
+                      <div class="auto-btn1"></div>
+                      <div class="auto-btn2"></div>
+                      <div class="auto-btn3"></div>
+                      <div class="auto-btn4"></div>
+                      <div class="auto-btn5"></div>
+                  </div>
+                </div>
+                <div class="navigation-manual">
+                  <label for="radio1" class="manual-btn"></label>
+                  <label for="radio2" class="manual-btn"></label>
+                  <label for="radio3" class="manual-btn"></label>
+                  <label for="radio4" class="manual-btn"></label>
+                  <label for="radio5" class="manual-btn"></label>
+              </div>
+   
+            </div>
+            <script type="text/javascript">
+                var counter = 1;
+                setInterval(function(){
+              document.getElementById('radio'+ counter).checked=true;
+              counter++;
+              if(counter>5){
+                  counter=1
+              }
+                }, 5000);
+              </script>
+             
+  
+           </header>
+        
+        <div id="div1">
+          <button class="w3-bar-item w3-button" onclick="openCity('London')">London</button>
+          <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Paris</button>
+          <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Tokyo</button>
+        </div>
+        <div id="div2">
+             div 2
+        </div>
+        <div id="div3">
+         div 3
+        </div>
+        <div id="div4">
+         div 4 
+        </div>
+        
+        <footer id="footer">
+            Footer of the page 
+        </footer>
+    </body>
+</html>

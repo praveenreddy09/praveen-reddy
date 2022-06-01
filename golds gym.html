@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="golds gym.css">
+        <link rel="shortcut icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/Gold%27s_Gym_logo.svg/1200px-Gold%27s_Gym_logo.svg.png"/>
+        <title> golds gym</title>
+    </head>
+    <body>
+        <section id="header">
+            <div class="header container">
+              <div class="nav-bar">
+                <div class="brand">
+                  <div class="logo">
+                    <a href="#hero">  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/Gold%27s_Gym_logo.svg/1200px-Gold%27s_Gym_logo.svg.png" id="logo" alt="logo">
+                    </a> </div>
+                  <a href="#hero">
+                    <h1><span>G</span>old's <span>g</span>ym</h1>
+                  </a>
+                </div>
+                <div class="nav-list">
+                  <div class="hamburger">
+                    <div class="bar"></div>
+                  </div>
+                  <ul>
+                    <li><a href="#hero" data-after="Home">Home</a></li>
+                    <li><a href="#about" data-after="About">About</a></li>
+                    <li><a href="#carrers" data-after="carrers">carrers</a></li>
+                    <li><a href="#contact" data-after="Contact">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="hero" >
+                <div class="slider">
+                    <div class="slides">
+                      <input type="radio" name="radio-btn" id="radio1" >
+                      <input type="radio" name="radio-btn" id="radio2" >
+                      <input type="radio" name="radio-btn" id="radio3" >
+                      <input type="radio" name="radio-btn" id="radio4" >
+                      <input type="radio" name="radio-btn" id="radio5" >
+                    
+                      <div class="slide first">
+                           <img src="pr6.jpg" alt="there will be a picture">
+                     </div>
+                      <div class="slide">
+                           <img src="pr4.webp" alt="there will be a picture">
+                   </div>
+                      <div class="slide">
+                       <img src="pr2.jpg" alt="there will be a picture">
+                      </div>
+                      <div class="slide">
+                          <img src="pr3.jpg" alt="there will be a picture">
+                      </div>
+                      <div class="slide">
+                        <img src="pr5.png" alt="there will be a picture">
+                    </div>
+           
+                      <div class="navigation-auto">
+                          <div class="auto-btn1"></div>
+                          <div class="auto-btn2"></div>
+                          <div class="auto-btn3"></div>
+                          <div class="auto-btn4"></div>
+                          <div class="auto-btn5"></div>
+                      </div>
+                    </div>
+                    <div class="navigation-manual">
+                      <label for="radio1" class="manual-btn"></label>
+                      <label for="radio2" class="manual-btn"></label>
+                      <label for="radio3" class="manual-btn"></label>
+                      <label for="radio4" class="manual-btn"></label>
+                      <label for="radio5" class="manual-btn"></label>
+                  </div>
+       
+                </div>
+                <script type="text/javascript">
+                    var counter = 1;
+                    setInterval(function(){
+                  document.getElementById('radio'+ counter).checked=true;
+                  counter++;
+                  if(counter>5){
+                      counter=1
+                  }
+                    }, 3000);
+                  </script>   
+          </section>
+          <div>
+            <div class="tab">
+                <button class="tablinks" onclick="openpackage(event, 'package 1')" id="defaultOpen">package 1</button>
+                <button class="tablinks" onclick="openpackage(event, 'package 2')">package 2</button>
+                <button class="tablinks" onclick="openpackage(event, 'package 3')">package 3</button>
+              </div>
+              
+              <div id="package 1" class="tabcontent">
+                <h3>package 1</h3>
+                
+              </div>
+              
+              <div id="package 2" class="tabcontent">
+                <h3>package 2</h3>
+               
+              </div>
+              
+              <div id="package 3" class="tabcontent">
+                <h3>package 3</h3>
+                <p>
+
+                </p>
+              </div>
+              
+              <script>
+              function openpackage(evt, packageName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                  tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                  tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(packageName).style.display = "block";
+                evt.currentTarget.className += " active";
+              }
+              document.getElementById("defaultOpen").click();
+              </script>
+         </div>
+         <div id="div3">
+           <h2> Galary</h2>
+           <p>
+           <img src="5.jpg">
+           <img src="2.jfif">
+           </p>
+           </div>
+           <div id="div4">
+            <h3>Faq's</h3>
+           </div>
+           <section id="about">
+            <div class="about container">
+             <h1>
+                 about me
+             </h1>
+            </div>
+          </section>
+          <section id="carrers">
+            <div class="carrers container">
+             <h1>
+                carrers
+             </h1>
+            </div>
+          </section>
+          <section id="contact">
+            <div class="contact container">
+             <h1>
+                 contact
+             </h1>
+            </div>
+          </section>
+
+    </body>
+</html>

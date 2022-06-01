@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="subbu2.css">
+  <link rel="stylesheet" type="text/css" href="fontawesome-free-5.15.3-web\fontawesome-free-5.15.3-web\css\all.css">
+  <link rel="shortcut icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/Gold%27s_Gym_logo.svg/1200px-Gold%27s_Gym_logo.svg.png"/>
+  
+  <title>Golds Gym</title>
+</head>
+
+<body >
+
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>G</span>old's  <span>G</span>ym</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#skills" data-after="Skills">Carrers</a></li>
+            <li><a href="#about" data-after="About">About us</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero" style="background-image: url( image22.jpeg ); background-repeat: no-repeat; background-size: cover;">
+    <div class="hero container">
+      <div>
+        
+          <div class="slider">
+              <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1" >
+                <input type="radio" name="radio-btn" id="radio2" >
+                <input type="radio" name="radio-btn" id="radio3" >
+                <input type="radio" name="radio-btn" id="radio4" >
+                <input type="radio" name="radio-btn" id="radio5" >
+              
+                <div class="slide first">
+                     <img src="pr6.jpg" alt="there will be a picture">
+               </div>
+                <div class="slide">
+                     <img src="pr4.webp" alt="there will be a picture">
+             </div>
+                <div class="slide">
+                 <img src="pr2.jpg" alt="there will be a picture">
+                </div>
+                <div class="slide">
+                    <img src="pr3.jpg" alt="there will be a picture">
+                </div>
+                <div class="slide">
+                  <img src="pr5.png" alt="there will be a picture">
+              </div>
+     
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                </div>
+              </div>
+              <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+            </div>
+ 
+          </div>
+          <script type="text/javascript">
+              var counter = 1;
+              setInterval(function(){
+            document.getElementById('radio'+ counter).checked=true;
+            counter++;
+            if(counter>5){
+                counter=1
+            }
+              }, 3000);
+            </script>
+
+       
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+</div>
+<script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+  document.getElementById('radio'+ counter).checked=true;
+  counter++;
+  if(counter>5){
+      counter=1
+  }
+    }, 3000);
+  </script>
+
+</header>
+<div>
+<div class="tab">
+    <button class="tablinks" onclick="openpackage(event, 'package 1')" id="defaultOpen">BEGINNER</button>
+    <button class="tablinks" onclick="openpackage(event, 'package 2')">PRO</button>
+    <button class="tablinks" onclick="openpackage(event, 'package 3')">VIP</button>
+  </div>
+  
+  <div id="package 1" class="tabcontent">
+    <h1><center> BEGINNER</center></h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>Benifits in beginner package</h2>
+   
+      <P>UNLIMITED ACCESS TO YOGA CLASSES</P>
+      <P>24/7 GYM ACCESS</P>
+      <P>USE OF LOCKER % SHOWERS</P>
+      <br>
+      <br>
+      <img src="giphy.gif" style="height: 200px;width: 600px;position: absolute;">
+    
+    
+    
+  </div>
+  
+  <div id="package 2" class="tabcontent">
+    <h1><center>PRO</center></h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>Benifits in Pro package</h2>
+    
+      
+    <P>UNLIMITED ACCESS TO YOGA CLASSES</P>
+    <P>24/7 GYM ACCESS</P>
+    <P>USE OF LOCKER % SHOWERS</P>
+    <P>WEEKDAY POOL ACCESS</P>
+    <br>
+    <br>
+
+    <br>
+    <br>
+    <img src="123456.gif" style="height: 200px;width: 200px;">
+  
+  
+   
+  </div>
+  
+  <div id="package 3" class="tabcontent">
+    <h1><center>VIP</center></h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>Benifits in Vip package</h2>
+    
+      
+    <P>UNLIMITED ACCESS TO YOGA CLASSES</P>
+    <P>24/7 GYM ACCESS</P>
+    <P>USE OF LOCKER % SHOWERS</P>
+    <P>WEEKDAY POOL ACCESS</P>
+    <P>ACCESS TO POOL 7 DAYS A WEEK</P>
+    <P>12% OFF ON ALL STORE PRODUCTS FREE GYM t-shirts</P>
+    <br>
+    <br>
+    <img src="enrollnow.gif" style="height: 200px;width: 600px;position: absolute;">
+  
+    <p>
+
+    </p>
+  </div>
+  
+  <script>
+  function openpackage(evt, packageName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(packageName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  document.getElementById("defaultOpen").click();
+  </script>
+</div>
+<div id="div3">
+<h2> Galary</h2>
+<p>
+<img src="5.jpg" alt="there will be an image ">
+
+<img src="2.jfif" alt="there will be an image ">
+<img src="09.jfif"alt="there will be an image ">
+<img src="010.webp" alt="there will be an image">
+</p>
+</div>
+<div id="div4">
+<h3>Faq's</h3>
+<strong style="color:red;">Can I take a break in my membership?</strong>
+<p style="color: rgb(0, 0, 0);">Memberships may be suspended for any reasons for an admin fee of £25 for a period of not less than one and not more than three months.</p>
+<strong style="color: red;">Is there a maintenance fee?</strong>
+<p style="color: rgb(5, 0, 0);">Since the average cost of a gym membership has plummeted over the years, the need to supplement that lost revenue has risen. It’s common for gyms to charge an annual “maintenance fee” to members. And since gym memberships are annual contracts — at least through the first year — that initial $30 to $100 fee is unavoidable.</p>
+<strong style="color: red;"> Do I have adequate health insurance?</strong>
+<p>These days, most gyms make you sign a liability waiver, meaning, unless the gym’s negligence is indisputable, you’ll likely have to cover your own medical bills. If your insurance is thin (or non-existent), treadmill at your own risk.</p>
+</div>
+
+ 
+ 
+
+        
+   <!-- About carrers-->
+   <section id="skills"   style="background-image: url( image22.jpeg); background-repeat: no-repeat; background-size: cover;">
+    <div class="skills container" >
+    
+      <div class="skills-top">
+        <h1 class="section-title">Car<span>r</span>ers</h1>
+        
+        <p></p>
+      </div>
+      <div class="skills-bottom">
+        <div class="skills-item">
+          
+          <h2>Personal Fitness Training</h2>
+          
+        </div>
+        <div class="skills-item">
+         
+          <h2>Nutrition Coaching</h2>
+          <p></p>
+        </div>
+        <div class="skills-item">
+          
+          <h2>  Group Exercise Instructor </h2>
+          <p></p>
+         
+        </div>
+        <div class="skills-item">
+          
+            <h2> Sport Yoga Instructor  </h2>
+            <p></p>
+        </div>
+        <div class="skills-item">
+          
+          <h2>Wellness Coaching</h2>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End carrers Section-->
+  
+  
+  <!-- About Section -->
+  <section id="about"  style="background-image: url( image22.jpeg); background-repeat: no-repeat; background-size: cover;">
+    <div class="about container">
+      <div class="col-right">
+        <h1 class="section-title">About <span>us</span></h1>
+        
+        <p> Gold's Gym Has Been The Authority In Fitness Since 1965 Dating Back To The Original Gold's Gym In Venice, California. It Was The Place For Serious Fitness. Opened Long Before The Modern-Day Health Club Existed, The Original Gold's Gym Featured Homemade Equipment And A Dedication To Getting Results. It Was An Instant Hit. Gold's Gym Quickly Became Known As “The Mecca Of Bodybuilding.''
+        </p>
+         <br> <p> In 1977, Gold's Gym Received International Attention When It Was Featured In The Movie Pumping Iron That Starred Arnold Schwarzenegger And Lou Ferrigno. From That First Gym In Venice, Gold's Gym Has Become The Largest Co-Ed Gym Chain In The World With Over 700+ Clubs In 27 Countries. Today, Gold's Gym Has Expanded Its Fitness Profile To Offer All Of The Latest Equipment And Services, Including Group Exercise, Personal Training, Cardiovascular Equipment, Spinning, And Yoga, While Maintaining Its Core Weight Lifting Tradition.
+          
+          Gold's Gym Has Become The Preferred Gym Of Celebrities, Athletes, Bodybuilders, The Military, And Fitness Enthusiasts All Over The World. Most Importantly, Gold's Gym Continues To Change Lives By Helping People Achieve Their Individual Potential.
+            </p>
+           
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  <section class ="contact" id="contact" style="background-image: url( image22.jpeg); background-repeat: no-repeat; background-size: cover;">
+    <div class="Header" style="text-align:center; color:crimson;height: 100px ; font-size: xx-large;" >
+    <h1 class ="Header"><bold>CON<span>TACT</span></bold></h1>
+    </div>
+    <div class="max-width">
+      <h2 class="title">Contact me</h2>
+      <div class="contact-content">
+          <div class="column left">
+            
+              <div class="icons">
+                  <div class="row">
+                    <i class="fas fa-user"></i>
+                      <div class="info">
+                          <div class="head">Company Name</div>
+                          <div class="sub-title">Golds Gym </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <i class="fas fa-map-marker-alt"></i>                  
+                       <div class="info">
+                          <div class="head">Address</div>
+                          <div class="sub-title">Hyderabad, India</div>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <i class="fas fa-envelope"></i>
+                      <div class="info">
+                          <div class="head">Email</div>
+                          <div class="sub-title">Goldsgym@gmail.com</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="column right">
+              <div class="text">Message me</div>
+              <form class="contact-form" action="#" method="POST">
+                  <div class="fields">
+                      <div class="field name">
+                          <input type="text" class="fullname" placeholder="Name">
+                      </div>
+                      <div class="field email">
+                          <input type="text" class="email-input" placeholder="Email">
+                      </div>
+                  </div>
+                  <div class="field">
+                      <input type="text" class="subject" placeholder="Subject">
+                  </div>
+                  <div class="field textarea">
+                      <textarea class="message" cols="30" rows="10" placeholder="Message.."></textarea>
+                  </div>
+                  <div class="button-area">
+                      <button class="send-msg" type="submit" name="send">Send message</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container" >
+      <div class="brand">
+        <h1><span>G</span>olds <span>G</span>ym</h1>
+      </div>
+      <h2></h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.facebook.com/goldsgym/" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://instagram.com/goldsgym?igshid=YmMyMTA2M2Y=" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://twitter.com/goldsgym" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.behance.net/search/projects/?search=Gold%27s%20Gym&sort=recommended&time=month" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+        </div>
+      </div>
+      <p>Copyright © 2022 golds gym. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="app.js"></script>
+</body>
+
+</html>
